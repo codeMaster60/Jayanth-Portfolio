@@ -12,7 +12,7 @@ const About = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { icon: Globe, name: 'HTML5/CSS3', level: 95 },
+    { icon: Globe, name: 'Product Strategy', level: 95 },
     { icon: Code, name: 'JavaScript', level: 90 },
     { icon: Code, name: 'React/Redux', level: 95 },
     { icon: Lightning, name: 'Tailwind CSS', level: 91 },
@@ -24,6 +24,7 @@ const About = () => {
     { icon: Database, name: 'PostgreSQL', level: 87 },
     { icon: GitBranch, name: 'Git', level: 89 },
     { icon: Cube, name: 'GitHub', level: 83 },
+    
   ];
 
   useEffect(() => {
@@ -77,18 +78,18 @@ const About = () => {
       className="py-20 px-6 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div ref={imageRef} className="relative">
+          <div ref={imageRef} className="relative -mx-20 lg:-mx-0 ">
             <div className="relative w-80 h-80 mx-auto lg:mx-0">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-pulse" />
+              <div className="absolute  inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-pulse" />
 
-              <div className="relative w-full h-full glass rounded-full p-2 hover:shadow-glow-primary transition-all duration-500 group">
-                <div className="w-full h-full cursor-pointer rounded-full overflow-hidden bg-gradient-secondary">
-                  <img src="/Images/profileLogo.jpg" alt="CodeZenith - Full Stack Developer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="relative w-full  h-full rounded-full  hover:shadow-glow-primary transition-all duration-500 group">
+                <div className="w-full h-full cursor-pointer rounded-full  overflow-hidden bg-gradient-secondary">
+                  <img src="/Images/img.png" alt="CodeZenith - Full Stack Developer" className="w-full h-full object-top object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
-
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/30 rounded-full animate-float" />
               <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-accent/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
+              
             </div>
           </div>
 

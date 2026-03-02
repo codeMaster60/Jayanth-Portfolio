@@ -62,10 +62,21 @@
     scroll-behavior: smooth;
   }
 
+
+
   body {
     @apply bg-background text-foreground antialiased;
     background: var(--gradient-background);
     overflow-x: hidden;
+  }
+
+  @font-face {
+    font-family: "heromain";
+    src: url("/public/fonts/body_grotesque/Body-Grotesque-Bold-trial.ttf");
+  }
+
+  .hero {
+    font-family: "Orbitron"
   }
   
   .glass {

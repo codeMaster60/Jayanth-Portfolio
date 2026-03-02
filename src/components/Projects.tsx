@@ -13,10 +13,10 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Bike-time – Immersive Experience",
-      description: "Developed an interactive biking experience website featuring dynamic animations, route exploration, performance stats, and a sleek responsive interface for riders and enthusiasts.",
+      title: "Scheduled Delivery Adoption Optimization",
+      description: "Description: Redesigned cart-to-checkout slot visibility to increase scheduled delivery adoption from 12% → target 30%, improving routing efficiency and reducing last-mile costs.",
       image: "/Images/project-1.jpg",
-      tech: ["React", "Node.js", "Framer Motion", "Express.js", "PostgreSQL", "Tailwind CSS", "Docker"],
+      tech: [ "Product Strategy", "KPI Tree", "A/B Testing", "Operational Efficiency"],
       liveUrl: "",
       githubUrl: ""
     },
@@ -122,9 +122,7 @@ const Projects = () => {
                   <a href={project.liveUrl} className="w-10 h-10 bg-primary/90 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-primary transition-colors duration-200">
                     <Globe size={18} className="text-primary-foreground" />
                   </a>
-                  <a href={project.githubUrl} className="w-10 h-10 bg-secondary/90 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-secondary transition-colors duration-200">
-                    <GithubLogo size={18} className="text-secondary-foreground" />
-                  </a>
+                 
                 </div>
               </div>
 
