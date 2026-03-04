@@ -102,7 +102,7 @@ const Hero = () => {
 
   return (
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div ref={splineRef} className="absolute hidden lg:block inset-0 w-full h-full opacity-70">
+      <div ref={splineRef} className="absolute hidden inset-0 w-full h-full opacity-70">
         <iframe src="https://my.spline.design/genkubgreetingrobot-MW4W3iAFsJj5olFfT1MhN0TH/" frameBorder="0" width="100%" height="100%" className="w-full h-full" />
       </div>
 
@@ -111,7 +111,7 @@ const Hero = () => {
       <div ref={orbRef3} className="absolute bottom-1/4 left-1/3 w-40 h-40 bg-accent/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }} />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-light text-foreground mb-6 leading-tight">
+        <h1 ref={titleRef} className="text-4xl md:text-6xl lg:text-7xl font-extrabold   hero text-foreground mb-6 leading-tight">
           Hi, I'm{' '}
           <span className="text-glow bg-gradient-primary bg-clip-text text-transparent">
             Jayanth

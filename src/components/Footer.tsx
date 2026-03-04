@@ -74,9 +74,7 @@ const Footer = () => {
               Building thoughtful, high-impact products through structured strategy, user insight and data-driven execution.
             </p>
             <div className="flex gap-4">
-              <a href="" className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center hover:shadow-glow-primary transition-all duration-300 hover:scale-110">
-                <GithubLogo size={18} className="text-primary-foreground" />
-              </a>
+             
               <a href="" className="w-10 h-10 bg-gradient-secondary rounded-lg flex items-center justify-center hover:shadow-glow-secondary transition-all duration-300 hover:scale-110">
                 <LinkedinLogo size={18} className="text-secondary-foreground" />
               </a>

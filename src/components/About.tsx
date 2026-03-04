@@ -1,7 +1,20 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Globe, Code, Lightning, Rocket, Heart, Database, GitBranch, Cube, Terminal, Cloud } from 'phosphor-react';
+import {
+  GlobeHemisphereWest,
+  BracketsCurly,
+  TreeStructure,
+  Star,
+  TrendUp,
+  Cube,
+  Calculator,
+  UsersThree,
+  UserFocus,
+  FlowArrow,
+  Robot,
+  ChartLine
+} from  'phosphor-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,18 +25,19 @@ const About = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
 
   const skills = [
-    { icon: Globe, name: 'HTML5/CSS3', level: 95 },
-    { icon: Code, name: 'JavaScript', level: 90 },
-    { icon: Code, name: 'React/Redux', level: 95 },
-    { icon: Lightning, name: 'Tailwind CSS', level: 91 },
-    { icon: Cube, name: 'Bootstrap', level: 91 },
-    { icon: Rocket, name: 'Next.js', level: 85 },
-    { icon: Heart, name: 'UI/UX Design', level: 87 },
-    { icon: Terminal, name: 'Node.js/Express.js', level: 87 },
-    { icon: Database, name: 'MongoDB', level: 87 },
-    { icon: Database, name: 'PostgreSQL', level: 87 },
-    { icon: GitBranch, name: 'Git', level: 89 },
-    { icon: Cube, name: 'GitHub', level: 83 },
+    { icon: GlobeHemisphereWest, name: 'Product Strategy', level: 95 },
+    { icon: BracketsCurly, name: ' Problem Framing', level: 88 },
+    { icon: TreeStructure, name: ' KPI Tree Structuring', level: 87 },
+    { icon: Star, name: 'North Star Metric Design', level: 85 },
+    { icon: TrendUp, name: 'Adoption Growth Strategy', level: 85 },
+    { icon: Cube, name: 'Cost Optimization Strategy ', level: 83 },
+    { icon: Calculator, name: 'Unit Economics Thinking ', level: 87 },
+    { icon:  UsersThree , name: 'User Segmentation', level: 84 },
+    { icon: UserFocus, name: 'User Research', level: 87 },
+    { icon: FlowArrow, name: 'n8n Workflow Automation', level: 78},
+    { icon:  Robot, name: 'Automation Agent Design', level: 75 },
+    { icon:  ChartLine, name: 'Metric Design', level: 85 }
+    
   ];
 
   useEffect(() => {
@@ -77,18 +91,18 @@ const About = () => {
       className="py-20 px-6 relative overflow-hidden">
       <div className="container mx-auto max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div ref={imageRef} className="relative">
+          <div ref={imageRef} className="relative -mx-20 lg:-mx-0 ">
             <div className="relative w-80 h-80 mx-auto lg:mx-0">
-              <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-pulse" />
+              <div className="absolute  inset-0 bg-gradient-primary rounded-full blur-xl opacity-30 animate-pulse" />
 
-              <div className="relative w-full h-full glass rounded-full p-2 hover:shadow-glow-primary transition-all duration-500 group">
-                <div className="w-full h-full cursor-pointer rounded-full overflow-hidden bg-gradient-secondary">
-                  <img src="/Images/profileLogo.jpg" alt="CodeZenith - Full Stack Developer" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="relative w-full  h-full rounded-full  hover:shadow-glow-primary transition-all duration-500 group">
+                <div className="w-full h-full cursor-pointer rounded-full  overflow-hidden bg-gradient-secondary">
+                  <img src="/Images/img.png" alt="CodeZenith - Full Stack Developer" className="w-full h-full object-top object-cover group-hover:scale-110 transition-transform duration-500" />
                 </div>
               </div>
-
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary/30 rounded-full animate-float" />
               <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-accent/20 rounded-full animate-float" style={{ animationDelay: '1s' }} />
+              
             </div>
           </div>
 
